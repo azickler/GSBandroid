@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Liste des praticiens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/ListViewPraticiens"
+        android:layout_width="match_parent"
+        android:layout_height="434dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonAjouter"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ajouter" />
+
+        <Button
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonQuitter"
+            android:layout_weight="1"
+            android:text="@string/quitter" />
+    </LinearLayout>
+
+</LinearLayout>

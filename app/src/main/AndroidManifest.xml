@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zickler.projete4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".controleur.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controleur.ListVisitesBetween"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".controleur.ListPraticiens"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".controleur.AjoutPraticien"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".controleur.ModifPraticien"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".controleur.ListeVisitesPrat"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".controleur.AjoutVisite"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+        android:name=".controleur.ListeVisitesMax"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"></activity>
+        <activity
+        android:name=".controleur.ModifVisite"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"></activity>
+    </application>
+
+
+
+</manifest>

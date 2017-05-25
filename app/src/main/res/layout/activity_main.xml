@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.zickler.projete4.controleur.MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonAnciennesVisites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praticien à visiter"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/bouton_prat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPrat"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonVisites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:text="Visites"
+        android:textAlignment="center"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/dateFin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/dateMax"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonAnciennesVisites"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.02"
+        android:ems="10"
+        android:hint="Date max"
+        android:inputType="date"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        tools:inputType="text|textPersonName|number" />
+
+    <EditText
+        android:id="@+id/dateFin"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:ems="10"
+        android:hint="Date fin"
+        android:inputType="date"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        tools:inputType="text|textPersonName|number"
+        android:layout_below="@+id/dateDeb"
+        android:layout_alignLeft="@+id/dateDeb"
+        android:layout_alignStart="@+id/dateDeb"
+        android:layout_marginTop="21dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/dateDeb"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:ems="10"
+        android:hint="Date début"
+        android:inputType="date"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        tools:inputType="text|textPersonName|number"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/divider_horizontal_dark"
+        android:layout_below="@+id/buttonPrat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/divider_horizontal_dark"
+        android:layout_below="@+id/buttonVisites"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

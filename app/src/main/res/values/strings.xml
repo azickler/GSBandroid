@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Application Gestion Praticien</string>
+    <string name="bouton_prat">Praticiens</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="quitter">Quitter</string>
+    <string name="dernieresVisites">Listes des dernières visites</string>
+    <string name="anciennesVisites">Visites les plus anciennes</string>
+    <string name="addPNom">Saisir ici un nom</string>
+    <string name="addPAdresse">Saisir ici une rue</string>
+    <string name="addPCP">Saisir ici un CP</string>
+    <string name="addPVille">Saisir ici une ville</string>
+    <string name="calendrier">Calendrier</string>
+    <string name="add">Ajouter</string>
+    <string name="quit">Quitter</string>
+    <string name="change">Modifier</string>
+    <string name="addVdate">Saisir ici une date</string>
+    <string name="addVbilan">Saisir ici une bilan</string>
+    <string name="addVmotif">Saisir ici une motif</string>
+    <string name="addVvisiteur">Saisir ici une visiteur</string>
+    <string name="addVindConf">Saisir ici une indConf</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/Titre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.02"
+                android:text="Modification d'un Praticien" />
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/addPNom"
+                android:inputType="text"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="5"
+                tools:inputType="text|textPersonName|number" />
+
+            <EditText
+                android:id="@+id/adresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.02"
+                android:ems="10"
+                android:hint="@string/addPAdresse"
+                android:inputType="text"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="5"
+                tools:inputType="text|textPersonName|number" />
+
+            <EditText
+                android:id="@+id/cp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.02"
+                android:ems="10"
+                android:hint="@string/addPCP"
+                android:inputType="number"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="5"
+                tools:inputType="text|textPersonName|number" />
+
+            <EditText
+                android:id="@+id/ville"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.02"
+                android:ems="10"
+                android:hint="@string/addPVille"
+                android:inputType="text"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="5"
+                tools:inputType="text|textPersonName|number" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.02">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="200dp"
+                    android:layout_height="41dp"
+                    android:layout_weight="0.02"
+                    android:elevation="0dp"
+                    android:text="@string/change" />
+
+                <Button
+                    android:id="@+id/quitter"
+                    android:layout_width="200dp"
+                    android:layout_height="39dp"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_weight="0.02"
+                    android:text="@string/quit" />
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
