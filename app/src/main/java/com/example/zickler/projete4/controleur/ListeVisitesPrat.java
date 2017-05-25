@@ -31,7 +31,7 @@ public class ListeVisitesPrat extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.v_visprat);
         Button buttonQuitter = (Button) findViewById(R.id.buttonQuitter);
-        Button buttonAjout = (Button) findViewById(R.id.buttonAjouter);
+        Button buttonAjout = (Button) findViewById(R.id.buttonAjout);
         ListViewVisites = (ListView) findViewById(R.id.ListViewVisites);
         // récupération des données
         final Bundle extras = getIntent().getExtras();

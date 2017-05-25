@@ -21,7 +21,6 @@ public class ModifPraticien extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.v_modifprat);
         final Bundle extras = getIntent().getExtras();
-        Toast.makeText(getApplicationContext(), "Fenêtre de modification du Praticien code : "+extras.getString("CODEP"), Toast.LENGTH_LONG).show();
         Button buttonQuitter = (Button) findViewById(R.id.quitter);
         // R.id.ButtonQuitterAjout fait référence à l’id du layout ajout_liste.xml
 

@@ -42,7 +42,6 @@ public class ListPraticiens extends Activity {
 
         //On déclare la HashMap qui contiendra les informations pour un item
         HashMap<String, String> map;
-        Toast.makeText(getApplicationContext(), "il y a " + listePratRecherche.size() + " articles dans la BD", Toast.LENGTH_LONG).show();
         //essai foreach
         for (Praticien unPrat : listePratRecherche
                 ) {
