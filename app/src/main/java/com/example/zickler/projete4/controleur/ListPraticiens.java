@@ -42,6 +42,7 @@ public class ListPraticiens extends Activity {
 
         //On déclare la HashMap qui contiendra les informations pour un item
         HashMap<String, String> map;
+        Toast.makeText(getApplicationContext(), "il y a " + listePratRecherche.size() + " articles dans la BD", Toast.LENGTH_LONG).show();
         //essai foreach
         for (Praticien unPrat : listePratRecherche
                 ) {
@@ -78,12 +79,14 @@ public class ListPraticiens extends Activity {
                     public void onClick(DialogInterface dialog, int id) {
                         Intent intent = new Intent(ListPraticiens.this, ModifPraticien.class);
                         intent.putExtra("CODEP",map.get("CODEP").toString());
+                        finish();
                         startActivity(intent);
                     }});
                 adb.setNegativeButton("Prestations", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         Intent intent = new Intent(ListPraticiens.this, ListeVisitesPrat.class);
                         intent.putExtra("CODEP",map.get("CODEP").toString());
+                        finish();
                         startActivity(intent);
                     }});
                 adb.setNeutralButton("Supprimer", new DialogInterface.OnClickListener() {
@@ -107,6 +110,7 @@ public class ListPraticiens extends Activity {
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "ouverture fenêtre Ajout !", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(ListPraticiens.this, AjoutPraticien.class);
+                finish();
                 startActivity(intent);
             }
         });

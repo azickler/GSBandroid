@@ -34,10 +34,20 @@ public class ListVisitesBetween extends Activity {
         listViewVisites = (ListView) findViewById(R.id.ListViewVisites);
 
         Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            Toast.makeText(getApplicationContext(), extras.getString("dateDebut")+" "+extras.getString("dateFin"), Toast.LENGTH_LONG).show();
+            //The key argument here must match that used in the other activity
+        }
         // récupération des données
         final VisiteDAO accesDao = new VisiteDAO(this);
         ArrayList<Visite> listeVisiteRecherche;
         listeVisiteRecherche = accesDao.getVisites(extras.getString("dateDebut"),extras.getString("dateFin"));
+        Toast.makeText(getApplicationContext(),listeVisiteRecherche.toString(), Toast.LENGTH_LONG).show();
+
+        if(listeVisiteRecherche.isEmpty()){
+
+            Toast.makeText(getApplicationContext(),listeVisiteRecherche.toString(), Toast.LENGTH_LONG).show();
+        }
         //Création de la ArrayList qui nous permettra de remplir la listView
         ArrayList<HashMap<String, String>> listItem = new ArrayList<HashMap<String, String>>();
 

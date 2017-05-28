@@ -25,22 +25,24 @@ public class MainActivity extends AppCompatActivity {
         final EditText txtDateDeb = (EditText) findViewById(R.id.dateDeb);
         final EditText txtDateFin = (EditText) findViewById(R.id.dateFin);
         final EditText txtDateMax = (EditText) findViewById(R.id.dateMax);
-       // testBd();
         View.OnClickListener onClickLister = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.buttonVisites:
+                        Toast.makeText(getApplicationContext(), "ouverture fenêtre dernières visites !", Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(MainActivity.this, ListVisitesBetween.class);
                         intent.putExtra("dateDebut",txtDateDeb.getText().toString());
                         intent.putExtra("dateFin",txtDateFin.getText().toString());
                         startActivity(intent);
                         break;
                     case R.id.buttonPrat:
+                        Toast.makeText(getApplicationContext(), "ouverture fenêtre Praticien !", Toast.LENGTH_LONG).show();
                         Intent intentlArt = new Intent(MainActivity.this, ListPraticiens.class);
                         startActivity(intentlArt);
                         break;
                     case R.id.buttonAnciennesVisites:
+                        Toast.makeText(getApplicationContext(), "ouverture fenêtre Praticien !", Toast.LENGTH_LONG).show();
                         Intent intentaVis = new Intent(MainActivity.this, ListeVisitesMax.class);
                         intentaVis.putExtra("dateMax",txtDateMax.getText().toString());
                         startActivity(intentaVis);
@@ -61,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Cr�ation d'un Article
         Praticien unArticle = new Praticien("JEAN EUDE","RUE COQUILLe","45000","ORLEANS");
-        Visite uneVisite = new Visite("1999-06-28","Pas terrible","panique","Louis Armstrong",75,2);
+        Visite uneVisite = new Visite("1999-06-28","Pas terrible","panique","Louis Armstrong",75,1);
 
         long ret = articleAccestest.addVisite(uneVisite);
 
